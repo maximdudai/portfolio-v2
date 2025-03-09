@@ -1,0 +1,33 @@
+[
+    {
+        "title": "Freelancer",
+        "company": "Self-Employed",
+        "location": "Remote",
+        "startDate": "2023",
+        "endDate": "Present",
+        "description": [
+            "Developed responsive landing pages for optimal user experience",
+            "Implemented SEO strategies to drive organic traffic",
+            "Collaborated with clients to design user-friendly websites"
+        ],
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Next.js",
+            "Tailwind CSS"
+        ]
+    },
+    {
+        "title": "Machine Operator",
+        "company": "ICEL",
+        "companyUrl": "https://www.icel.pt/",
+        "location": "Benedita, Portugal",
+        "startDate": "2021",
+        "endDate": "2024",
+        "description": [
+            "Experienced in assembling parts, operating and maintaining production machines, and performing casting. Skilled in ensuring product quality and following safety and environmental standards."
+        ]
+    }
+]

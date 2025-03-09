@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Kahoot",
+        "logo": "./imgs/kahoot.png",
+        "description": "A game-based learning platform that allows users to create and play quizzes.",
+        "technologies": ["React", "Next.js", "Tailwind CSS", "Node.js", "Express", "SocketIO"],
+        "url": "https://www.kahoot.pro"
+    },
+    {
+        "name": "OnlyModelingAgency",
+        "logo": "./imgs/onlymodelingagency.png",
+        "description": "Freelance project: Built a sleek business page for a modeling agency.",
+        "technologies": ["React", "Tailwind CSS", "i18n"]
+    },
+    {
+        "name": "Estrela Pneus e Reboques",
+        "logo": "./imgs/estrelapneus.png",
+        "description": "Freelance project: Developed a dynamic business page for a car service and tire sales client.",
+        "technologies": ["Next.js", "Tailwind CSS", "SCSS"]
+    },
+    {
+        "name": "eBook Shop",
+        "logo": "./imgs/ebookshop.png",
+        "description": "eBookShop offers easy access to a wide range of books. Users can create accounts, browse, and buy books from any device. Advanced search filters make finding books easy, and the admin has full control over the site.",
+        "technologies": ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP", "MySQL"],
+        "url": "https://github.com/maximdudai/eBooks-Shop"
+    }
+]

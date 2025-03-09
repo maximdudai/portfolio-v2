@@ -1,0 +1,11 @@
+{
+  "skills": {
+    "frontend": ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Bootstrap", "Sass", "jQuery"],
+    "backend": ["Node.js", "Express", "PHP"],
+    "databases": ["MongoDB", "MySQL"],
+    "tools": ["VS Code", "Git", "GitKraken", "Figma", "Postman", "Netlify", "Vercel", "Laragon"],
+    "AI": ["ChatGPT", "deepseek", "Grok"],
+    "cloud": ["AWS"],
+    "other": ["Agile", "Scrum", "RESTful APIs", "GraphQL"]
+  }
+}

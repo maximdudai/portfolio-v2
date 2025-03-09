@@ -1,0 +1,33 @@
+[
+    {
+        "title": "Information Systems Programming",
+        "subtitle": "Higher Technical Professional Course",
+        "institution": "Escola Superior de Tecnologia e Gestão de Leiria",
+        "institutionUrl": "https://www.ipleiria.pt/",
+        "location": "Leiria, Portugal",
+        "startDate": "2023",
+        "endDate": "Present",
+        "description": [
+            "Developed skills in programming languages such as C, PHP, JavaScript, Java.",
+            "Gained experience in web development using HTML, CSS, Bootstrap and JavaScript.",
+            "Learned about database management systems and SQL.",
+            "Participated in group projects to design and implement software solutions."
+        ]
+    },
+    {
+        "title": "Technical Course in Sports",
+        "subtitle": "High School",
+        "institution": "Escola Profissional da Nazaré",
+        "institutionUrl": "https://www.epnazare.eu/",
+        "location": "Nazaré, Portugal",
+        "startDate": "2018",
+        "endDate": "2021",
+        "description": [
+            "Develop the annual training plan in collaboration with senior sports coaches responsible for the discipline.",
+            "Organize and coordinate training sessions, ensuring the safety and well-being of all participants.",
+            "Monitor and evaluate the performance of athletes, providing feedback and guidance to help them improve their skills.",
+            "Collaborate in evaluating training outcomes based on alignment with established objectives, under the supervision of a senior coach.",
+            "Gained practical experience through internships in local sports organizations."
+        ]
+    }
+]
