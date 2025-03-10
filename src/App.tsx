@@ -129,8 +129,8 @@ function LandingPage() {
         <div className="container-fluid flex justify-between items-start mt-20">
             <header className="w-1/3 flex justify-center items-center">
                 <div className="container fixed max-w-[25rem] top-20 left-1/5 flex flex-col justify-center">
-                    <h1 className="text-5xl font-semibold tracking-wider">Maxim Dudai</h1>
-                    <h3 className="text-[1.7rem] uppercase font-semibold">Software Developer</h3>
+                    <h1 className="text-5xl font-semibold tracking-wider text-white">Maxim Dudai</h1>
+                    <h3 className="text-[1.7rem] uppercase font-semibold text-slate-500">Software Developer</h3>
                     <ul className="uppercase mt-20 max-w-38  text-sm text-left list-none">
                         {sections.map((section) => (
                             <a

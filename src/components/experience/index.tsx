@@ -2,6 +2,7 @@ import experience from './experience.json';
 import { SiReaddotcv } from "react-icons/si";
 import { GoLinkExternal } from "react-icons/go";
 
+import personalCurricum from './file/maximdudai-cv.pdf';
 
 export default function Experience() {
     return (
@@ -58,7 +59,7 @@ export default function Experience() {
 
             </div>
             <div className="viewFullResume mt-10">
-                <a href="https://drive.google.com/file/d/1x5nq8v5Z3c6fD4G9mQHkXgJ7l0jN6b2R/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <a href={personalCurricum} target="_blank" rel="noopener noreferrer">
                     <button className="text-sm bg-slate-500/10 hover:bg-slate-500/20 transition-all duration-100 ease-in-out px-5 py-2 rounded-md flex items-center">
                         View Full Resume
                         <span className="ml-2">
