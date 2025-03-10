@@ -28,15 +28,12 @@ function LandingPage() {
     const [activeSection, setActiveSection] = useState<string>('aboutme');
 
     useEffect(() => {
-        // Set initial active section based on URL hash or default to aboutme
         const hash = window.location.hash.slice(1);
         if (hash) {
             setActiveSection(hash);
         }
 
-        // Track scroll position
         const handleScroll = () => {
-            // Force check on each scroll event
             checkVisibleSections();
         };
 
@@ -70,18 +67,18 @@ function LandingPage() {
             const visibleSections = sectionElements.map(section => {
                 const rect = section.element!.getBoundingClientRect();
                 const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-                
+
                 // Calculate how much of the section is visible
                 const visibleTop = Math.max(0, rect.top);
                 const visibleBottom = Math.min(viewportHeight, rect.bottom);
                 const visibleHeight = Math.max(0, visibleBottom - visibleTop);
-                
+
                 // Calculate visibility as a ratio of the section's height
                 const visibilityRatio = visibleHeight / rect.height;
-                
+
                 // Calculate position in viewport (0 = top, 1 = bottom)
                 const positionInViewport = (rect.top + rect.bottom) / (2 * viewportHeight);
-                
+
                 return {
                     name: section.name,
                     visibilityRatio,
@@ -93,23 +90,22 @@ function LandingPage() {
 
             // Filter to sections that are actually visible
             const actuallyVisible = visibleSections.filter(section => section.visibilityRatio > 0);
-            
+
             if (actuallyVisible.length === 0) return;
-            
+
             // First priority: Section that's completely visible (or most visible)
             const mostVisible = actuallyVisible.sort((a, b) => b.visibilityRatio - a.visibilityRatio)[0];
-            
-            // If a section is significantly visible (>70%), select it
+
             if (mostVisible.visibilityRatio > 0.7) {
                 setActiveSection(mostVisible.name);
                 return;
             }
-            
+
             // Second priority: Section closest to the center of the viewport
-            const centerSection = actuallyVisible.sort((a, b) => 
+            const centerSection = actuallyVisible.sort((a, b) =>
                 Math.abs(a.positionInViewport - 0.5) - Math.abs(b.positionInViewport - 0.5)
             )[0];
-            
+
             setActiveSection(centerSection.name);
         };
 
@@ -126,12 +122,14 @@ function LandingPage() {
     };
 
     return (
-        <div className="container-fluid flex justify-between items-start mt-20">
-            <header className="w-1/3 flex justify-center items-center">
-                <div className="container fixed max-w-[25rem] top-20 left-1/5 flex flex-col justify-center">
-                    <h1 className="text-5xl font-semibold tracking-wider text-white">Maxim Dudai</h1>
-                    <h3 className="text-[1.7rem] uppercase font-semibold text-slate-500">Software Developer</h3>
-                    <ul className="uppercase mt-20 max-w-38  text-sm text-left list-none">
+        <div className="container-fluid flex flex-col lg:flex-row justify-between items-start lg:mt-20 p-5 lg:p-20">
+            <header className="w-full lg:w-1/3 flex justify-center items-center my-10">
+                <div className="container xl:fixed lg:max-w-[25rem] top-20 xl:left-1/5 flex flex-col justify-between md:items-start lg:justify-center">
+                    <div className="personalInformations my-5 md:my-0 w-full flex flex-col">
+                        <h1 className="text-4xl xl:text-5xl font-semibold tracking-wider text-white">Maxim Dudai</h1>
+                        <h3 className="text-lg md:text-xl xl:text-[1.7rem] uppercase font-semibold text-slate-500">Software Developer</h3>
+                    </div>
+                    <ul className="hidden w-full lg:block uppercase mt-20 max-w-38  text-sm text-left list-none">
                         {sections.map((section) => (
                             <a
                                 key={formatSectionName(section.name)}
@@ -155,7 +153,7 @@ function LandingPage() {
                             </a>
                         ))}
                     </ul>
-                    <div className="socialMedia flex items-center gap-5 mt-40">
+                    <div className="socialMedia flex lg:items-center gap-5 lg:mt-40">
                         <div className="linkedIn">
                             <a href="https://www.linkedin.com/in/maximdudai/" target="_blank" rel="noopener noreferrer">
                                 <SlSocialLinkedin className="w-6 h-6 text-slate-500 hover:text-slate-300" />
@@ -189,7 +187,7 @@ function LandingPage() {
                     </div>
                 </div>
             </header>
-            <main className="w-1/2 flex flex-col mr-20 gap-30 text-justify">
+            <main className="w-full lg:w-1/2 flex flex-col mt-20 md:mt-0 mr-20 gap-30 text-justify">
                 <AboutMe />
                 <Experience />
                 <Abilities />

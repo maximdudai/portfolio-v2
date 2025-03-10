@@ -27,10 +27,10 @@ export default function Projects() {
     return (
         <div id="projects" className="w-full flex flex-col">
             {typedProjects.map((project) => (
-                <div key={project.name} className="group mb-5 flex items-center cursor-pointer hover:bg-slate-600/20 rounded-md p-2">
-                    <div className="projectLogo w-1/3">
+                <div key={project.name} className="group mb-5 flex flex-col gap-5 lg:gap-0 lg:flex-row items-start lg:items-center cursor-pointer hover:bg-slate-600/20 rounded-md lg:p-2">
+                    <div className="projectLogo md:w-1/3">
                         <img
-                            className="w-30 h-auto rounded-md group-hover:border-[2px] group-hover:border-slate-600"
+                            className="lg:w-30 h-auto rounded-md group-hover:border-[2px] group-hover:border-slate-600"
                             src={logoMap[project.name]}
                             alt={`${project.name} logo`}
                         />
@@ -45,7 +45,7 @@ export default function Projects() {
                             )}
                         </h4>
                         <p className="text-slay-600">{project.description}</p>
-                        <div className="technologies flex gap-3">
+                        <div className="technologies flex flex-wrap gap-3">
                             {project.technologies.map((tech) => (
                                 <span key={tech} className="text-sm text-emerald-500 bg-emerald-900/35 px-5 py-1 rounded-md">
                                     {tech}

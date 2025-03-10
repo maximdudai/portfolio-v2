@@ -44,19 +44,19 @@ export default function Certificates() {
 
     return (
         <div id="certificates" className="w-full flex flex-col">
-            <div className="flex gap-5">
+            <div className="w-full flex flex-col md:flex-row gap-5">
                 {certificates.map((certificate, index) => (
                     <div
                         key={index}
-                        className="w-56 flex hover:bg-slate-500/10 transition-all duration-100 ease-in-out p-2 rounded-lg cursor-pointer"
+                        className="w-full lg:w-56 flex hover:bg-slate-500/10 transition-all duration-100 ease-in-out p-2 rounded-lg cursor-pointer"
                     >
                         <div className="flex flex-col justify-between items-start gap-2">
                             {/* Image container with fixed dimensions */}
-                            <div className="w-full h-40 overflow-hidden">
+                            <div className="w-full lg:h-40 overflow-hidden">
                                 <img
                                     src={certificate.url}
                                     alt={certificate.name}
-                                    className="h-full object-contain"
+                                    className="lg:h-full object-contain"
                                 />
                             </div>
                             {/* Link to the certificate */}

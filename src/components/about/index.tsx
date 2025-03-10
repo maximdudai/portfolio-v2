@@ -4,11 +4,11 @@ export default function AboutMe() {
     const cronologicTime = [
         {
             title: "Born in Ungheni, Republic of Moldova",
-            date: "Jan 2003",
+            date: "2003",
         },
         {
             title: "First Computer",
-            date: "Sept 2009",
+            date: "2009",
         },
         {
             title: "First Interaction with Programming",
@@ -31,7 +31,7 @@ export default function AboutMe() {
     return (
         <div id="aboutme">
             <div className="personalInformations">
-                <h1 className="text-5xl font-semibold tracking-wider">About Me</h1>
+                <h1 className="text-3xl md:text-5xl font-semibold tracking-wider">About Me</h1>
                 <p className="mb-4">
                     I’m a developer passionate about crafting accessible, pixel-perfect user interfaces that blend
                     thoughtful design with robust engineering. My favorite work lies at the intersection of design and
@@ -55,9 +55,9 @@ export default function AboutMe() {
                 </p>
             </div>
             <div className="cronologicTime w-full">
-                <div className="w-full flex justify-between items-start mt-10">
+                <div className="w-full flex flex-wrap justify-between items-start mt-10">
                     {cronologicTime.map((item, idx) => (
-                        <div key={idx} className="relative flex flex-col items-center">
+                        <div key={idx} className="relative my-5 md:my-0 flex flex-col items-center">
                             <div className="w-10 h-10 rounded-full bg-gray-800 border-4 border-gray-300 flex items-center justify-center">
                                 <div className="w-5 h-5 rounded-full bg-gray-500"></div>
                             </div>

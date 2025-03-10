@@ -5,8 +5,8 @@ export default function Education() {
         <div id="education" className="w-full flex mb-10 flex-col">
             <div className="educationList flex flex-col gap-5">
                 {education.map((edu, index) => (
-                    <div key={index} className="educationItem flex hover:bg-slate-500/10 transition-all duration-100 ease-in-out p-2 rounded-lg cursor-pointer">
-                        <div className="startEndDate w-1/2">
+                    <div key={index} className="educationItem flex flex-col gap-5 lg:gap-0 lg:flex-row hover:bg-slate-500/10 transition-all duration-100 ease-in-out p-2 rounded-lg cursor-pointer">
+                        <div className="startEndDate lg:w-1/2">
                             <span className="text-sm text-slate-500">{edu.startDate} &mdash; {edu.endDate}</span>
                             <h2 className="text-lg font-semibold">{edu.title}</h2>
                             {
@@ -17,9 +17,9 @@ export default function Education() {
                         <div className="w-full flex flex-col items-start">
                             {
                                 edu.institution &&
-                                <h3 className="text-xl font-semibold text-slate-500">
+                                <h3 className="text-xl font-semibold">
                                     {edu.institutionUrl ? (
-                                        <a href={edu.institutionUrl} target="_blank" rel="noopener noreferrer" className="hover:text-slate-200 transition-all duration-100 ease-in-out flex items-center">
+                                        <a href={edu.institutionUrl} target="_blank" rel="noopener noreferrer" className="transition-all duration-100 ease-in-out flex items-center">
                                             {edu.institution}
                                         </a>
                                     ) : (
@@ -33,7 +33,7 @@ export default function Education() {
                                     <ul className='list-none'>
                                         {
                                             edu.description.map((desc, descIndex) => (
-                                                <li key={descIndex} className="text-xs my-2">
+                                                <li key={descIndex} className="text-md text-slate-500 lg:text-sm my-2">
                                                     {desc}
                                                 </li>
                                             ))

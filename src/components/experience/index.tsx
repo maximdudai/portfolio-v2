@@ -9,9 +9,9 @@ export default function Experience() {
         <div id="experience">
             <div className="experienceList flex flex-col gap-5">
                 {experience.map((exp, index) => (
-                    <div key={index} className="experienceItem flex hover:bg-slate-500/10 transition-all duration-100 ease-in-out p-2 rounded-lg cursor-pointer">
+                    <div key={index} className="experienceItem flex flex-col lg:flex-row hover:bg-slate-500/10 transition-all duration-100 ease-in-out p-2 rounded-lg cursor-pointer">
 
-                        <div className="startEndDate w-1/3">
+                        <div className="startEndDate md:w-1/3">
                             <span className="text-sm text-slate-500">{exp.startDate} &mdash; {exp.endDate}</span>
                             <h2 className="text-xl font-semibold">{exp.title}</h2>
                         </div>
@@ -37,7 +37,7 @@ export default function Experience() {
                                 <div className="description">
                                     {
                                         exp.description.map((desc, descIndex) => (
-                                            <p key={descIndex} className="">
+                                            <p key={descIndex} className="text-slate-500">
                                                 {desc}
                                             </p>
                                         ))
@@ -46,7 +46,7 @@ export default function Experience() {
                             }
                             {
                                 exp.technologies &&
-                                <div className="technologies flex gap-2 mt-2">
+                                <div className="technologies flex flex-wrap gap-2 mt-2">
                                     {exp.technologies.map((tech, techIndex) => (
                                         <span key={techIndex} className="text-xs text-emerald-500 bg-emerald-900/35 px-5 py-1 rounded-md">{tech}</span>
                                     ))}
