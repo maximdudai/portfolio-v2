@@ -1,0 +1,137 @@
+[
+    {
+        "name": "Kahoot",
+        "purpose": "Side project",
+        "technologies": ["React", "Next.js", "Tailwind CSS", "Node.js", "Express", "SocketIO"],
+        "src": "https://github.com/maximdudai/kahoot",
+        "url": "https://www.kahoot.pro"
+
+    },
+    {
+        "name": "Estrela Pneus e Reboques",
+        "purpose": "Freelance project",
+        "technologies": ["Next.js", "Tailwind CSS", "SCSS"]
+    },
+    {
+        "name": "OnlyModelingAgency",
+        "purpose": "Freelance project",
+        "technologies": ["React", "Tailwind CSS", "i18n"]
+    },
+    {
+        "name": "eBook Shop",
+        "purpose": "School project",
+        "technologies": ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP", "MySQL"],
+        "src": "https://github.com/maximdudai/eBooks-Shop"
+    },
+    {
+        "name": "Fast Wheels",
+        "purpose": "School project",
+        "technologies": ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP", "Yii2 Advanced", "MySQL", "Codeception" ],
+        "mobile": ["Java", "XML", "Volley", "SQLite"],
+        "api": ["PHP", "ActiveRecord"],
+        "url": "https://github.com/maximdudai/FastWheels"
+    },
+    {
+        "name": "PetCare",
+        "purpose": "School project",
+        "technologies": ["HTML", "CSS", "Bootstrap", "JavaScript", "RestfulAPI"],
+        "url": "https://maximdudai.github.io/pwc_project/index.html",
+        "src": "https://github.com/maximdudai/pwc_project"
+    },
+    {
+        "name": "iCanteen",
+        "purpose": "School project",
+        "technologies": ["C#", ".NET", "Entity Framework", "LINQ", "SQL Server"],
+        "src": "https://github.com/maximdudai/iCanteen"
+    },
+    {
+        "name": "Chat App",
+        "purpose": "School project",
+        "technologies": ["C#", ".NET", "Socket TCP/IP", "Protocol SI"],
+        "src": "https://github.com/maximdudai/chat-app"
+    },
+    {
+        "name":"Management System",
+        "purpose": "School project",
+        "description": "This project, developed for the 'Fundamentals of Programming' course, is a prototype application for managing the academic situation of students in the TeSP program in Information Systems Programming (PSI) at the School of Technology and Management (ESTG)",
+        "technologies": ["C"],
+        "src": "https://github.com/maximdudai/fp-project"
+    },
+    {
+        "name": "PWS CRUD",
+        "purpose": "School project",
+        "technologies": ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP", "MySQL"],
+        "src": "https://github.com/maximdudai/pws-crud"
+    },
+    {
+        "name": "AMSI Android",
+        "purpose": "School project",
+        "description": "List of android applications developed during the curricular unit of Acesso Móvel a Sistemas de Informação (AMSI)",
+        "technologies": ["Java", "XML", "Volley", "Android Studio"],
+        "src": "https://github.com/maximdudai/amsi-android"
+    },
+    {
+        "name": "Password Manager",
+        "purpose": "Side project",
+        "technologies": ["C#"],
+        "src": "https://github.com/maximdudai/password-manager"
+    },
+    {
+        "name": "TodoList",
+        "purpose": "Side project",
+        "technologies": ["C#"],
+        "src": "https://github.com/maximdudai/TodoList"
+    },
+    {
+        "name": "Portfolio (v1)",
+        "purpose": "Side project",
+        "technologies": ["React", "Vite", "Tailwind CSS", "React Icons"],
+        "url": "https://portfolio-maximdudais-projects.vercel.app/",
+        "src": "https://github.com/maximdudai/portfolio"
+    },
+    {
+        "name": "MovieMaster",
+        "purpose": "Side project",
+        "technologies": ["React", "Tailwind CSS", "Axios", "React Icons", "The Movie Database API"],
+        "src": "https://github.com/maximdudai/MovieMaster"
+    },
+    {
+        "name": "Github Search",
+        "purpose": "Side project",
+        "technologies": ["React", "Tailwind CSS", "Axios", "React Icons", "GitHub API"],
+        "url": "https://maxdev-gitsrch.netlify.app/",
+        "src": "https://github.com/maximdudai/React/tree/main/github-search"
+    },
+    {
+        "name": "Currency Converter",
+        "purpose": "Side project",
+        "technologies": ["React", "Tailwind CSS", "Axios", "React Icons", "CoinMarketCap API", "CurrencyLayer API"],
+        "url": "https://maxdev-currency.netlify.app/",
+        "src": "https://github.com/maximdudai/currency-convert"
+    },
+    {
+        "name": "Robofriends",
+        "purpose": "Side project",
+        "technologies": ["React", "Tailwind CSS", "JSONPlaceholder API"],
+        "src": "https://github.com/maximdudai/React/tree/main/robofriends"
+    },
+    {
+        "name": "Smart Brain",
+        "purpose": "Side project",
+        "technologies": ["React", "Tailwind CSS", "React Particles"],
+        "src": "https://github.com/maximdudai/React/tree/main/smartbrain"
+    },
+    {
+        "name": "Mandachi Hotel",
+        "purpose": "Side project",
+        "technologies": ["HTML", "CSS", "Bootstrap", "JavaScript"],
+        "src": "https://github.com/maximdudai/mandachi",
+        "url": "https://maximdudai.github.io/mandachi/"
+    },
+    {
+        "name": "Blue Star Planning",
+        "purpose": "Side project",
+        "technologies": ["HTML", "CSS", "Bootstrap", "JavaScript"],
+        "url": "https://github.com/maximdudai/bluestarplanning"
+    }
+]

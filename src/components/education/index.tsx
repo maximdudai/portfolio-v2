@@ -33,7 +33,7 @@ export default function Education() {
                                     <ul className='list-none'>
                                         {
                                             edu.description.map((desc, descIndex) => (
-                                                <li key={descIndex} className="text-md text-slate-500 lg:text-sm my-2">
+                                                <li key={descIndex} className="text-md text-justify text-slate-500 lg:text-sm my-2">
                                                     {desc}
                                                 </li>
                                             ))

@@ -187,7 +187,7 @@ function LandingPage() {
                     </div>
                 </div>
             </header>
-            <main className="w-full lg:w-1/2 flex flex-col mt-20 md:mt-0 mr-20 gap-30 text-justify">
+            <main className="w-full lg:w-1/2 flex flex-col mt-20 lg:mt-0 mr-20 gap-30 text-justify">
                 <AboutMe />
                 <Experience />
                 <Abilities />
