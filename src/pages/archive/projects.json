@@ -83,10 +83,10 @@
         "src": "https://github.com/maximdudai/TodoList"
     },
     {
-        "name": "Portfolio (v1)",
+        "name": "Portfolio (v0.1)",
         "purpose": "Side project",
         "technologies": ["React", "Vite", "Tailwind CSS", "React Icons"],
-        "url": "https://portfolio-maximdudais-projects.vercel.app/",
+        "url": "https://portfolio-rouge-beta-47.vercel.app/",
         "src": "https://github.com/maximdudai/portfolio"
     },
     {
