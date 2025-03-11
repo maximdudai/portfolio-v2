@@ -12,6 +12,7 @@ import Abilities from './components/skills';
 import Projects from './components/projects';
 import Education from './components/education';
 import Certificates from './components/certificate';
+import { Link } from 'react-router';
 
 interface Section {
     name: string;
@@ -124,16 +125,16 @@ function LandingPage() {
     return (
         <div className="container-fluid flex flex-col lg:flex-row justify-between items-start lg:mt-20 p-5 lg:p-20">
             <header className="w-full lg:w-1/3 flex justify-center items-center my-10">
-                <div className="container xl:fixed lg:max-w-[25rem] top-20 xl:left-1/5 flex flex-col justify-between md:items-start lg:justify-center">
+                <div className="container lg:fixed lg:max-w-[25rem] top-20 xl:left-1/5 flex flex-col justify-between md:items-start lg:justify-center">
                     <div className="personalInformations my-5 md:my-0 w-full flex flex-col">
                         <h1 className="text-4xl xl:text-5xl font-semibold tracking-wider text-white">Maxim Dudai</h1>
                         <h3 className="text-lg md:text-xl xl:text-[1.7rem] uppercase font-semibold text-slate-500">Software Developer</h3>
                     </div>
                     <ul className="hidden w-full lg:block uppercase mt-20 max-w-38  text-sm text-left list-none">
                         {sections.map((section) => (
-                            <a
+                            <Link
                                 key={formatSectionName(section.name)}
-                                href={`#${formatSectionName(section.name).toLocaleLowerCase()}`}
+                                to={`#${formatSectionName(section.name).toLocaleLowerCase()}`}
                                 onClick={() => setActiveSection(formatSectionName(section.name))}
                             >
                                 <li
@@ -150,39 +151,39 @@ function LandingPage() {
                                         {section.name.charAt(0).toUpperCase() + section.name.slice(1)}
                                     </span>
                                 </li>
-                            </a>
+                            </Link>
                         ))}
                     </ul>
                     <div className="socialMedia flex lg:items-center gap-5 lg:mt-40">
                         <div className="linkedIn">
-                            <a href="https://www.linkedin.com/in/maximdudai/" target="_blank" rel="noopener noreferrer">
+                            <Link to="https://www.linkedin.com/in/maximdudai/" target="_blank" rel="noopener noreferrer">
                                 <SlSocialLinkedin className="w-6 h-6 text-slate-500 hover:text-slate-300" />
-                            </a>
+                            </Link>
                         </div>
                         <div className="github">
-                            <a href="https://www.github.com/maximdudai" target="_blank" rel="noopener noreferrer">
+                            <Link to="https://www.github.com/maximdudai" target="_blank" rel="noopener noreferrer">
                                 <FaGithub className="w-6 h-6 text-slate-500 hover:text-slate-300" />
-                            </a>
+                            </Link>
                         </div>
                         <div className="instagram">
-                            <a href="https://www.instagram.com/dudai1101/" target="_blank" rel="noopener noreferrer">
+                            <Link to="https://www.instagram.com/dudai1101/" target="_blank" rel="noopener noreferrer">
                                 <FaInstagram className="w-6 h-6 text-slate-500 hover:text-slate-300" />
-                            </a>
+                            </Link>
                         </div>
                         <div className="twitch">
-                            <a href="https://www.twitch.tv/max__dev" target="_blank" rel="noopener noreferrer">
+                            <Link to="https://www.twitch.tv/max__dev" target="_blank" rel="noopener noreferrer">
                                 <FaTwitch className="w-6 h-6 text-slate-500 hover:text-slate-300" />
-                            </a>
+                            </Link>
                         </div>
                         <div className="twitter">
-                            <a href="https://www.twitter.com/maximdudai11" target="_blank" rel="noopener noreferrer">
+                            <Link to="https://www.twitter.com/maximdudai11" target="_blank" rel="noopener noreferrer">
                                 <FaXTwitter className="w-6 h-6 text-slate-500 hover:text-slate-300" />
-                            </a>
+                            </Link>
                         </div>
                         <div className="discord">
-                            <a href="https://discord.com/users/325921764016128011" target="_blank" rel="noopener noreferrer">
+                            <Link to="https://discord.com/users/325921764016128011" target="_blank" rel="noopener noreferrer">
                                 <FaDiscord className="w-6 h-6 text-slate-500 hover:text-slate-300" />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

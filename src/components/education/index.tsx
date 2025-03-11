@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import education from './education.json'
 
 export default function Education() {
@@ -19,9 +20,9 @@ export default function Education() {
                                 edu.institution &&
                                 <h3 className="text-xl font-semibold">
                                     {edu.institutionUrl ? (
-                                        <a href={edu.institutionUrl} target="_blank" rel="noopener noreferrer" className="transition-all duration-100 ease-in-out flex items-center">
+                                        <Link to={edu.institutionUrl} target="_blank" rel="noopener noreferrer" className="transition-all duration-100 ease-in-out flex items-center">
                                             {edu.institution}
-                                        </a>
+                                        </Link>
                                     ) : (
                                         edu.institution
                                     )}

@@ -3,6 +3,7 @@ import { SiReaddotcv } from "react-icons/si";
 import { GoLinkExternal } from "react-icons/go";
 
 import personalCurricum from './file/maximdudai-cv.pdf';
+import { Link } from 'react-router';
 
 export default function Experience() {
     return (
@@ -18,15 +19,15 @@ export default function Experience() {
 
                         <div className="w-full flex flex-col items-start">
                             {
-                                exp.company && 
+                                exp.company &&
                                 <h3 className="text-xl font-semibold text-slate-500">
                                     {exp.companyUrl ? (
-                                        <a href={exp.companyUrl} target="_blank" rel="noopener noreferrer" className="hover:text-slate-200 transition-all duration-100 ease-in-out flex items-center">
+                                        <Link to={exp.companyUrl} target="_blank" rel="noopener noreferrer" className="hover:text-slate-200 transition-all duration-100 ease-in-out flex items-center">
                                             {exp.company}
                                             <span className="ml-2">
                                                 <GoLinkExternal />
                                             </span>
-                                        </a>
+                                        </Link>
                                     ) : (
                                         exp.company
                                     )}
@@ -59,14 +60,12 @@ export default function Experience() {
 
             </div>
             <div className="viewFullResume mt-10">
-                <a href={personalCurricum} target="_blank" rel="noopener noreferrer">
-                    <button className="text-sm bg-slate-500/10 hover:bg-slate-500/20 transition-all duration-100 ease-in-out px-5 py-2 rounded-md flex items-center">
-                        View Full Resume
-                        <span className="ml-2">
-                            <SiReaddotcv />
-                        </span>
-                    </button>
-                </a>
+                <Link className='text-sm border-b-[1px] border-b-slate-500 hover:bg-slate-500/20 transition-all duration-100 ease-in-out py-2 hover:rounded-md hover:px-1 flex items-center' to={personalCurricum} rel="noopener noreferrer">
+                    View Full Resume
+                    <span className="ml-2">
+                        <SiReaddotcv />
+                    </span>
+                </Link>
             </div>
         </div>
     )

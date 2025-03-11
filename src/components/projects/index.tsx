@@ -2,6 +2,7 @@ import projects from './projects.json';
 
 import { GoLinkExternal } from "react-icons/go";
 import { AiFillCode } from "react-icons/ai";
+import { Link } from 'react-router';
 
 interface Project {
     name: string;
@@ -39,9 +40,9 @@ export default function Projects() {
                         <h4 className="text-xl font-semibold flex items-center">
                             {project.name}
                             {project.url && (
-                                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                                <Link to={project.url} target="_blank" rel="noopener noreferrer">
                                     <GoLinkExternal className='ml-2' />
-                                </a>
+                                </Link>
                             )}
                         </h4>
                         <p className="text-slay-600">{project.description}</p>
@@ -56,14 +57,12 @@ export default function Projects() {
                 </div>
             ))}
             <div className="viewFullResume mt-5">
-                <a href="/archive" rel="noopener noreferrer">
-                    <button className="text-sm bg-slate-500/10 hover:bg-slate-500/20 transition-all duration-100 ease-in-out px-5 py-2 rounded-md flex items-center">
-                        View Projects Archive
-                        <span className="ml-2">
-                            <AiFillCode />
-                        </span>
-                    </button>
-                </a>
+                <Link className='text-sm border-b-[1px] border-b-slate-500 hover:bg-slate-500/20 transition-all duration-100 ease-in-out py-2 hover:rounded-md hover:px-1 flex items-center' to="/archive">
+                    View Projects Archive
+                    <span className="ml-2">
+                        <AiFillCode />
+                    </span>
+                </Link>
             </div>
         </div>
     );
