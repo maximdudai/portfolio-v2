@@ -118,6 +118,16 @@ function LandingPage() {
         };
     }, []);
 
+    const handleSectionClick = (sectionName: string): void => {
+        const sectionId = sectionName.toLowerCase().replace(/\s+/g, '');
+        const sectionElement = document.getElementById(sectionId);
+        if (sectionElement) {
+            sectionElement.scrollIntoView({ behavior: 'smooth' });
+        }
+        setActiveSection(sectionId);
+    };
+
+
     const formatSectionName = (name: string) => {
         return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase().replace(/\s+/g, '');
     };
@@ -135,7 +145,7 @@ function LandingPage() {
                             <Link
                                 key={formatSectionName(section.name)}
                                 to={`#${formatSectionName(section.name).toLocaleLowerCase()}`}
-                                onClick={() => setActiveSection(formatSectionName(section.name))}
+                                onClick={handleSectionClick.bind(null, formatSectionName(section.name))}
                             >
                                 <li
                                     className={`${activeSection === formatSectionName(section.name).toLocaleLowerCase()
