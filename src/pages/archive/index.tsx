@@ -5,8 +5,14 @@ import { TiArrowBackOutline } from "react-icons/ti";
 import { TbSourceCode } from "react-icons/tb";
 import { MdPreview } from "react-icons/md";
 import { GoLinkExternal } from "react-icons/go";
+import { useEffect } from 'react';
 
 export default function Archive() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className="w-full flex justify-center gap-10 my-20 p-3 lg:p-0" autoFocus={true}>
             <div className="container">
