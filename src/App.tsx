@@ -123,9 +123,9 @@ function LandingPage() {
     };
 
     return (
-        <div className="container-fluid flex flex-col lg:flex-row justify-between items-start lg:mt-20 p-5 lg:p-20">
-            <header className="w-full lg:w-1/3 flex justify-center items-center my-10">
-                <div className="container lg:fixed lg:max-w-[25rem] top-20 xl:left-1/5 flex flex-col justify-between md:items-start lg:justify-center">
+        <div className="container-fluid flex flex-col lg:flex-row justify-between items-start p-5 xl:p-20">
+            <header className="w-full lg:w-1/3 flex lg:justify-center items-center my-10">
+                <div className="container lg:fixed lg:max-w-[25rem] top-20 lg:left-32 xl:left-1/5 flex flex-col justify-between md:items-start lg:justify-center">
                     <div className="personalInformations my-5 md:my-0 w-full flex flex-col">
                         <h1 className="text-4xl xl:text-5xl font-semibold tracking-wider text-white">Maxim Dudai</h1>
                         <h3 className="text-lg md:text-xl xl:text-[1.7rem] uppercase font-semibold text-slate-500">Software Developer</h3>
