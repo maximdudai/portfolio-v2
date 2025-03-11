@@ -5,7 +5,7 @@ export default function Abilities() {
     const { skills } = skillData;
 
     return (
-        <div className="w-full flex flex-col gap-5" id="abilities">
+        <div className="w-full flex flex-col lg:gap-5" id="abilities">
             {Object.entries(skills).map(([category, skillList]) => (
                 <div key={category} className='flex flex-col md:flex-row'>
                     <div className="skillType w-1/3">

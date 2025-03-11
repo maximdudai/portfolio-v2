@@ -30,7 +30,7 @@ export default function AboutMe() {
     ];
 
     return (
-        <div id="aboutme">
+    <div id="aboutme" className="w-full">
             <div className="personalInformations">
                 <h1 className="text-3xl md:text-5xl font-semibold tracking-wider text-slate-200">About Me</h1>
                 <p className="mb-4">
@@ -57,7 +57,7 @@ export default function AboutMe() {
                     opportunities to grow as a developer, and I’m excited to see where my journey takes me next.
                 </p>
             </div>
-            <div className="cronologicTime w-full">
+            <div className="cronologicTime">
                 <div className="w-full flex flex-wrap justify-between items-start mt-10">
                     {cronologicTime.map((item, idx) => (
                         <div key={idx} className="relative my-5 md:my-0 flex flex-col items-center">

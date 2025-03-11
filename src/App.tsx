@@ -123,10 +123,10 @@ function LandingPage() {
     };
 
     return (
-        <div className="container-fluid flex flex-col lg:flex-row justify-between items-start p-5 xl:p-20">
-            <header className="w-full lg:w-1/3 flex lg:justify-center items-center my-10">
-                <div className="container lg:fixed lg:max-w-[25rem] top-20 lg:left-32 xl:left-1/5 flex flex-col justify-between md:items-start lg:justify-center">
-                    <div className="personalInformations my-5 md:my-0 w-full flex flex-col">
+        <div className="container-fluid flex flex-col lg:flex-row justify-between items-start xl:p-20">
+            <header className="w-full xl:w-1/3 flex xl:justify-center items-center my-10">
+                <div className="container lg:fixed lg:max-w-[25rem] lg:left-[10rem] top-10 lg:top-20 ml-1 2xl:left-1/5 flex flex-col justify-between md:items-start lg:justify-center">
+                    <div className="personalInformations w-full flex flex-col">
                         <h1 className="text-4xl xl:text-5xl font-semibold tracking-wider text-white">Maxim Dudai</h1>
                         <h3 className="text-lg md:text-xl xl:text-[1.7rem] uppercase font-semibold text-slate-500">Software Developer</h3>
                     </div>
@@ -188,7 +188,7 @@ function LandingPage() {
                     </div>
                 </div>
             </header>
-            <main className="w-full lg:w-1/2 flex flex-col mt-20 lg:mt-0 mr-20 gap-30 text-justify">
+            <main className="w-full p-2 xl:p-0 lg:w-1/2 flex flex-col mt-20 xl:mt-0 mr-20 gap-30 text-justify">
                 <AboutMe />
                 <Experience />
                 <Abilities />
