@@ -35,19 +35,19 @@ export default function Archive() {
                         <tbody>
                             {projects.map((project, index) => (
                                 <tr key={index} className="mb-5 md:mb-0 h-10 lg:h-20 border-b-[1px] border-b-slate-500/20">
-                                        <td className="text-slate-300">
-                                            <Link to={`${project.src}`} target="_blank" rel="noopener noreferrer" className="hover:text-emerald-500 hover:underline flex items-center">
-                                                {project.name}
-                                                <GoLinkExternal className='inline lg:hidden ml-2' />
-                                            </Link>
-                                        </td>
-                                        <td className="text-slate-500">{project.purpose}</td>
+                                    <td className="text-slate-300">
+                                        <Link to={`${project.src}`} target="_blank" rel="noopener noreferrer" className="hover:text-emerald-500 hover:underline flex items-center">
+                                            {project.name}
+                                            <GoLinkExternal className='inline lg:hidden ml-2' />
+                                        </Link>
+                                    </td>
+                                    <td className="text-slate-500">{project.purpose}</td>
 
-                                        <td className="hidden min-h-[5rem] lg:table-cell">
-                                            {project.technologies.map((technology, index) => (
-                                                <span key={index} className="text-emerald-500 text-sm bg-emerald-900/35 p-2 rounded-md mr-2">{technology}</span>
-                                            ))}
-                                        </td>
+                                    <td className="hidden min-h-[5rem] lg:table-cell">
+                                        {project.technologies.map((technology, index) => (
+                                            <span key={index} className="text-emerald-500 text-sm bg-emerald-900/35 p-2 rounded-md mr-2">{technology}</span>
+                                        ))}
+                                    </td>
 
 
                                     <td className="text-slate-500 hidden lg:table-cell">
@@ -67,10 +67,8 @@ export default function Archive() {
                             ))}
                         </tbody>
                     </table>
-
                 </div>
             </div>
-
         </div>
     )
 }

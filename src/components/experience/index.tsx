@@ -2,7 +2,6 @@ import experience from './experience.json';
 import { SiReaddotcv } from "react-icons/si";
 import { GoLinkExternal } from "react-icons/go";
 
-import personalCurricum from './file/maximdudai-cv.pdf';
 import { Link } from 'react-router';
 
 export default function Experience() {
@@ -60,7 +59,12 @@ export default function Experience() {
 
             </div>
             <div className="viewFullResume mt-10">
-                <Link className='text-sm border-b-[1px] border-b-slate-500 hover:bg-slate-500/20 transition-all duration-100 ease-in-out py-2 hover:rounded-md hover:px-1 flex items-center' to={personalCurricum} rel="noopener noreferrer">
+                <Link
+                    className='text-sm border-b-[1px] border-b-slate-500 hover:bg-slate-500/20 transition-all duration-100 ease-in-out py-2 hover:rounded-md hover:px-1 flex items-center'
+                    to="/file/maximdudai-cv.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     View Full Resume
                     <span className="ml-2">
                         <SiReaddotcv />

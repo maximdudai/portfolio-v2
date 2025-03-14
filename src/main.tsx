@@ -9,6 +9,7 @@ import './index.css'
 
 import LandingPage from './App'
 import Archive from './pages/archive'
+import Blog from './pages/blog'
 
 
 
@@ -24,6 +25,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/certificates" element={<LandingPage />} />
         <Route path="/education" element={<LandingPage />} />
         <Route path="/archive" element={<Archive />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </BrowserRouter>
     <SpeedInsights />
