@@ -1,10 +1,37 @@
 [
     {
+        "title": "Frontend Developer",
+        "company": "BRAINR",
+        "location": "Onsite",
+        "companyUrl": "https://brainr.co/",
+        "startDate": "2025",
+        "startMonth": "March",
+        "endDate": "Present",
+        "endMonth": "",
+        "description": [
+            "Developed and maintained reusable and scalable React components, ensuring high performance and visual consistency.",
+            "Collaborated with the Design System tech lead to deliver user-centered interfaces, reducing iteration time and improving customer satisfaction.",
+            "Led the migration process to the latest version of Storybook, enhancing the development and documentation workflow.",
+            "Implemented a comprehensive plan including documentation and automated testing (UI, Unit and E2E), increasing code coverage and reliability in production environments."
+        ],
+
+        "technologies": [
+            "TypeScript",
+            "JavaScript",
+            "React",
+            "Saas",
+            "Jest",
+            "Storybook"
+        ]
+    },
+    {
         "title": "Freelancer",
         "company": "Self-Employed",
         "location": "Remote",
         "startDate": "2023",
-        "endDate": "Present",
+        "startMonth": "July",
+        "endDate": "2025",
+        "endMonth": "March",
         "description": [
             "Developed responsive landing pages for optimal user experience",
             "Implemented SEO strategies to drive organic traffic",
@@ -25,7 +52,9 @@
         "companyUrl": "https://www.icel.pt/",
         "location": "Benedita, Portugal",
         "startDate": "2021",
+        "startMonth": "September",
         "endDate": "2024",
+        "endMonth": "December",
         "description": [
             "Experienced in assembling parts, operating and maintaining production machines, and performing casting. Skilled in ensuring product quality and following safety and environmental standards."
         ]

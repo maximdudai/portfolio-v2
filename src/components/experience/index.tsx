@@ -11,9 +11,12 @@ export default function Experience() {
                 {experience.map((exp, index) => (
                     <div key={index} className="experienceItem flex flex-col lg:flex-row hover:bg-slate-500/10 transition-all duration-100 ease-in-out p-2 rounded-lg cursor-pointer">
 
-                        <div className="startEndDate md:w-1/3">
-                            <span className="text-sm text-slate-500">{exp.startDate} &mdash; {exp.endDate}</span>
+                        <div className="startEndDate my-3 md:my-0 md:w-1/3">
                             <h2 className="text-xl font-semibold">{exp.title}</h2>
+                            <div className='flex flex-col items-start gap-1'>
+                                <span className="text-sm text-slate-500">{exp.endDate} {exp.endMonth}</span>
+                                <span className="text-xs text-slate-500">{exp.startDate} {exp.startMonth}</span>
+                            </div>
                         </div>
 
                         <div className="w-full flex flex-col items-start">
@@ -34,15 +37,15 @@ export default function Experience() {
                             }
                             {
                                 exp.description &&
-                                <div className="description">
+                                <ul className="description list-disc list-inside">
                                     {
                                         exp.description.map((desc, descIndex) => (
-                                            <p key={descIndex} className="text-slate-500">
+                                            <li key={descIndex} className="text-slate-500 py-1">
                                                 {desc}
-                                            </p>
+                                            </li>
                                         ))
                                     }
-                                </div>
+                                </ul>
                             }
                             {
                                 exp.technologies &&

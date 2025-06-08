@@ -16,16 +16,16 @@ export default function AboutMe() {
             date: "2016",
         },
         {
-            title: "First Landing page",
-            date: "2020",
-        },
-        {
             title: "Started Learning Web Development",
             date: "2021",
         },
         {
             title: "Joined CTeSP Information Systems Programming",
             date: "2023",
+        },
+        {
+            title: "First Professional Experience as a Developer",
+            date: "2025",
         },
     ];
 
